@@ -1,0 +1,46 @@
+env:
+  browser: true
+
+extends:
+  - standard
+  - standard-react
+  - plugin:flowtype/recommended
+  - plugin:jest/recommended
+  - prettier
+  - prettier/flowtype
+  - prettier/react
+  - prettier/standard
+
+parser: 'babel-eslint'
+
+plugins:
+  - flowtype
+  - jest
+  - prettier
+
+rules:
+  no-console:
+  - error
+  - allow:
+    - info
+    - warn
+    - error
+
+  # TODO: The following rules have been temporarily added and should be
+  # removed in subsequent MRs
+
+  # Jest Rules
+  jest/no-disabled-tests: off
+  jest/no-focused-tests: off
+  jest/no-identical-title: off
+  jest/prefer-to-have-length: off
+  jest/valid-expect: off
+
+  # React Rules
+  react/prop-types: off
+
+  prettier/prettier: error
+
+settings:
+  flowtype:
+    onlyFilesWithFlowAnnotation: true

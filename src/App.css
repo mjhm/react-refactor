@@ -1,0 +1,39 @@
+.App {
+  background: center 0 no-repeat url("/people_hero_bg.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 50px;
+  color: #222;
+}
+
+.App-logo {
+  width: 300px;
+}
+
+.App-header {
+  height: 72px;
+  text-align: right;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+section {
+  text-align: left;
+}
+
+section > ul {
+  margin-left: 50%;
+  position: relative;
+  left: -125px;
+}
+
+dt, dd {
+  margin: 2px;
+  display: inline-block;
+}
